@@ -17,6 +17,7 @@ body {
     margin-bottom: auto;
     margin-left: 5%;
     margin-right: 5%;
+    max-width: 800px;
 }
 figure {
     text-align: center
@@ -72,10 +73,19 @@ footer {
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-    margin-left: -10%;
-    margin-right: -10%;
+    margin-left: -40px;
+    margin-right: -40px;
     margin-top: auto;
     margin-bottom: auto;
+    padding-bottom: 1px; 
+}
+input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
 }
 /* colour scheme:
 text: #303C6C
