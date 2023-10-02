@@ -8,6 +8,7 @@ main {
     padding-bottom: 0%;
     padding-left: 5%;
     padding-right: 5%;
+    width: 100%;
 }
 body {
     background-color: #FBE8A6;
@@ -18,6 +19,7 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     max-width: 800px;
+    width: 100%;
 }
 figure {
     text-align: center
