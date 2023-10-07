@@ -8,9 +8,13 @@ main {
 body {
     background-color: #FBE8A6;
     padding: 5%;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    margin: 0 0 2% 0;
-    max-width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
+    display: block;
+    justify-content: left;
+    gap: 16px;
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 20px 10px;
 }
 
 figure {
@@ -21,18 +25,11 @@ figure {
     margin: auto;
 }
 
-hr {
-    height: 1px;
-    width: 150%;
-    background-color: #24305E;
-    border-color:  #24305E;
-    margin-left: -10%;
-    margin-right: -10%;
-}
-
 h1 {
     color: #303C6C;
     font-size: 40px;
+    justify-content: center;
+    display: block;
     text-align: center;
     text-shadow: 0px 0px 3px #D2FDFF;
 }
@@ -41,6 +38,17 @@ h2 {
     font-size: 30px;
     margin: auto;
     padding: 0 0 0 2%;
+}
+h3 {
+    color: #303C6C;
+    font-size: 16px;
+    margin: auto;
+    padding: 0 0 0 2%;
+}
+
+.mainContent {
+    display: flex;
+    max-width: auto;
 }
 
 .propicture {
@@ -51,6 +59,9 @@ h2 {
 }
 
 p {
+    flex-direction: row;
+    width: auto;
+    max-width: 80%;
     margin: 2%;
     color: rgba(0, 0, 0, 0.8)
 }
@@ -71,6 +82,13 @@ a:active {
     color: #e64444;
 }
 
+.sidebar {
+    flex-direction: row-reverse;
+    align-items: left;
+    margin: 0 0 0 0;
+    background-color: white;
+}
+
 footer {
     background-color: #D2FDFF;
     color: rgba(48, 60, 108, 0.8);
@@ -84,6 +102,11 @@ input {
 }
 
 fieldset{
+    width: 90%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     border: 0px;
     border-bottom: 1px solid #303C6C ;
 }
@@ -98,7 +121,6 @@ textarea{
 }
 
 input[type="submit"] {
-    font-family: 'Trebuchet MS';
     font-size: 14px;
     font-weight: bold;
     height: 3.5em;
