@@ -1,28 +1,20 @@
+* {
+    box-sizing: border-box;  
+}
+
 main {
     background-color: #F4976C;
     margin: auto;
-    padding: 0%;
     width: 100%;
+    max-width: 100%;
 }
 
 body {
     background-color: #FBE8A6;
     padding: 5%;
     font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
-    display: block;
-    justify-content: left;
     gap: 16px;
-    max-width: 98%;
     margin: 0 auto;
-    padding: 20px 10px;
-}
-
-figure {
-    text-align: center
-}
-
-.links {
-    margin: auto;
 }
 
 h1 {
@@ -36,34 +28,34 @@ h1 {
 h2 {
     color: #303C6C;
     font-size: 30px;
-    margin: auto;
-    padding: 0 0 0 2%;
 }
 h3 {
     color: #303C6C;
     font-size: 16px;
-    margin: auto;
-    padding: 0 0 0 2%;
-}
-
-.mainContent {
-    display: flex;
-    max-width: auto;
 }
 
 .propicture {
-    display: block;
-    margin: auto;
     border-radius: 100%;
-    padding: 1%;
+    vertical-align: middle;
 }
 
 p {
-    flex-direction: row;
-    width: auto;
-    max-width: 80%;
-    margin: 2%;
     color: rgba(0, 0, 0, 0.8)
+}
+
+.aboutMe {
+    background-color: #B4DFE5;
+    border-radius: 2%;
+    border: 1px solid #B4DFE5;
+}
+
+.links {
+    border-bottom: #303C6C solid 1px;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: #303C6C solid 1px;
 }
 
 a {
@@ -82,13 +74,6 @@ a:active {
     color: #e64444;
 }
 
-.sidebar {
-    flex-direction: row-reverse;
-    align-items: left;
-    margin: 0 0 0 0;
-    background-color: white;
-}
-
 footer {
     background-color: #D2FDFF;
     color: rgba(48, 60, 108, 0.8);
@@ -102,11 +87,6 @@ input {
 }
 
 fieldset{
-    width: 90%;
-    max-width: 90%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     border: 0px;
     border-bottom: 1px solid #303C6C ;
 }
@@ -116,7 +96,7 @@ textarea{
     max-width: 80%;
     padding: 10px;
     border: 0px;
-    border-radius: 5% 5% 5% 5%;
+    border-radius: 2%;
     vertical-align: middle;
 }
 
@@ -124,7 +104,7 @@ input[type="submit"] {
     font-size: 14px;
     font-weight: bold;
     height: 3.5em;
-    background-color: #B4DFE5;
+    background-color: transparent;
     border-color: #303C6C;
     border-radius: 10%;
 }
