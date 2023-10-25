@@ -1,60 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
-    <title>
-      Joe Grant - Backend Python Developer
-    </title>
-    <link rel="stylesheet" href="Main page styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,scale=1.0">
+    <title>Joe Grant Portfolio Website</title>
+    <link rel="stylesheet"
+    href="Main page styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,400;0,700;0,900;1,100;1,200;1,500&family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300;1,900&family=Merriweather:ital,wght@0,400;1,300;1,400&display=swap');
+    </style>
   </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="" alt="">
+      </div>
+      <button class="nav-toggle" aria-label="toggle-navigation">
+        <span class="menu-dashes"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#My-Services" class="nav__link">My Services</a></li>
+          <li class="nav__item"><a href="#About-Me" class="nav__link">About Me </a></li>
+          <li class="nav__item"><a href="#My-Work" class="nav__link">My Work</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<h1>Joe Grant - Backend Python Developer</h1>
+    <!-- Introduction -->
 
-<body>
-  <main>
-      <table style="width:100%">
-      <tr>
-        <th class="propicture"colspan="3">
-        <a target="_blank" 
-        href="https://www.linkedin.com/in/joe-grant-1a3900153/?originalSubdomain=uk">
-        <img class="propicture" 
-        src="https://media.licdn.com/dms/image/D4E03AQG4j4nhbAZWgg/profile-displayphoto-shrink_200_200/0/1677968170911?e=1701302400&v=beta&t=ii309Zm_0lx6oh0XK-pjfStB-pZLNkGBXw3IheTL4qY" 
-        alt="My picture - Joe Grant."></a></th>
-      </tr>
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I'm <strong>Joe Grant</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Back-end Developer</p>
+      <img src="Profile Longshot.jpg" class="intro__img" alt="My Profile Picture">
+    </section>
 
-      <tr class="links">
-        <th colspan="3" style="height: 50px;">
-        <a target="_blank"
-        href="https://www.linkedin.com/in/joe-grant-1a3900153/?originalSubdomain=uk">
-        Linkedin</a>
-        
-        <a target="_blank" 
-        href="https://github.com/josephgrant666/josephgrant666">
-        Github</a></th>
-      </tr>
+    <!-- My Services -->
 
-      <tr>
-        <th style="width:70%" class="latestPosts"><h2>Latest Posts</h2></th>
-        <th style="width:30%" class="aboutMe"><h3>About me</h3></th>
-      </tr>
-      <tr>
-        <td><p>dsfafsdfdsfsdf </p></td>
-        <td class="aboutMe"><p>Hi, my name is Joe Grant and welcome to my website. 
-          I'm an aspiring Python back-end developer 
-          and I'll be using this website to catalogue and showcase my journey.</p></td>
-      </tr>
-    </table>
-  </main>   
+    <section class="My-Services" id="My-Services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Python Development</h3>
+          <p>I'm able to write programs and apps using Python commands</p>
+        </div>
 
-  <footer>
-    <fieldset>
-      <label for="send-email" class="send-email"><textarea id="send-email" type="text" required placeholder="Send me an email: "></textarea>
-      <input type="submit" value="Submit" /></label> 
-    </fieldset>
-    Self-designed, self-taught.
-      <a target="_blank" href="https://www.linkedin.com/in/joe-grant-1a3900153/?originalSubdomain=uk">Linkedin</a>
-      <a target="_blank" href="https://github.com/josephgrant666/josephgrant666">Github</a>
-  </footer>
-  </main>
-</body>
+        <div class="service">
+          <h3>Database Structuring</h3>
+          <p>I can organise and purpose data using SQL databases</p>
+        </div>
+
+        <div class="service">
+          <h3>APIs and Containing</h3>
+          <p>I can then create secure and accessible data using APIs and containers</p>
+        </div>
+      </div>
+
+    <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About Me -->
+
+    <section class="About-Me" id="About-Me">
+      <h2 class="section__title section__title--About-Me">Who I am</h2>
+      <p class="section__subtitle section__subtitle--About-Me"></p>
+
+      <div class="About-Me__body">
+        <p></p>
+        <p></p>
+      </div>
+
+      <img src="Profile image.jpg" alt="My Profile Picture">
+    </section>
+
+    <!-- My Work -->
+    <section class="My-Work" id="My-Work">
+      <p class="section__subtitle"></p>
+
+      <div class="Portfolio">
+        <!--Portfolio item 1-->
+        <a href="a" class="Portfolio__item">
+          <img src="Profile image.jpg" alt="Portfolio-img1">
+        </a>
+
+        <!--Portfolio item 2-->
+        <a href="a" class="Portfolio__item">
+          <img src="Profile image.jpg" alt="Portfolio-img1">
+        </a>
+
+        <!--Portfolio item 3-->
+        <a href="a" class="Portfolio__item">
+          <img src="Profile image.jpg" alt="Portfolio-img1">
+        </a>
+
+        <!--Portfolio item 4-->
+        <a href="a" class="Portfolio__item">
+          <img src="Profile image.jpg" alt="Portfolio-img1">
+        </a>
+
+        <!--Portfolio item 5-->
+        <a href="a" class="Portfolio__item">
+          <img src="Profile image.jpg" alt="Portfolio-img1">
+        </a>
+
+        <!--Portfolio item 6-->
+        <a href="a" class="Portfolio__item">
+          <img src="Profile image.jpg" alt="Portfolio-img1">
+        </a>
+
+        <!--Portfolio item 7-->
+        <a href="a" class="Portfolio__item">
+          <img src="Profile image.jpg" alt="Portfolio-img1">
+        </a>
+
+        <!--Portfolio item 8-->
+        <a href="a" class="Portfolio__item">
+          <img src="Profile image.jpg" alt="Portfolio-img1">
+        </a>
+
+        <!--Portfolio item 9-->
+        <a href="a" class="Portfolio__item">
+          <img src="Profile image.jpg" alt="Portfolio-img1">
+        </a>
+
+        <!--Portfolio item 10-->
+        <a href="a" class="Portfolio__item">
+          <img src="Profile image.jpg" alt="Portfolio-img1">
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <a href="mailto:josephgrant666@gmail.com" class="footer-link">josephgrant666@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item"><a class="social-list__link" 
+          href="https://github.com/josephgrant666">github</a></li>
+        <li class="social-list__item"><a class="social-list__link" 
+          href="https://www.linkedin.com/in/joe-grant-1a3900153/">Linkedin</a></li>
+      </ul>
+    </footer>
+
+  </body>
+</html>
