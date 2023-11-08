@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,scale=1.0">
+    <title>FMScout - My python data project</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+      <link rel="manifest" href="img/site.webmanifest">
+    <link rel="stylesheet" href="css/Main page styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,400;0,700;0,900;1,100;1,200;1,500&family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300;1,900&family=Merriweather:ital,wght@0,400;1,300;1,400&display=swap');
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="" alt="">
+      </div>
+      <button class="nav-toggle" aria-label="toggle-navigation">
+        <span class="menu-dashes"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/index.html#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="/index.html#My-Services" class="nav__link">My Services</a></li>
+          <li class="nav__item"><a href="/index.html#About-Me" class="nav__link">About Me </a></li>
+          <li class="nav__item"><a href="/index.html#My-Blog" class="nav__link">My Blog</a></li>
+          <li class="nav__item"><a href="/index.html#My-Work" class="nav__link">My Work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <!-- Introduction -->
+
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      FMScout <strong>Python and Data</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">How I did it and lessons learnt</p>
+    <img src="img/Profile Longshot.jpg" class="intro__img" alt="Portfolio-img1">
+  </section>
+
+  <div class="Portfolio-item-individual">
+    <div class="blog__item"></div>
+      <p class="section__subtitle section__subtitle--article-item">Establishing what I wanted to build</p>
+      <p>This project was the first moment that I felt like after learning different skills and building my confidence, it was time 
+        to build an app of use that displayed my skills and could be developed more and more as an ongoing project. I wanted to build 
+        something that a) was useful to me, b) I would have fun building and c) could integrate the skills that I had learnt.  
+      </p>
+      <p> Football manager is my favourite game to play and as a backend developer, I saw it as the perfect focus for my first project.
+        The game heavily relies upon the use of data in order to create gameplay for the user, but involves a lot of guessing and 'feeling'.       
+        I wanted to find a way of removing this and manipulating the data in my own way in order to optimise my performance in the game. 
+      </p>
+      <figure class="blog__img">
+        <img src="img/FM24.jpg" alt="" class="blog__img">
+        <figcaption>FM24 front cover</figcaption>
+      </figure>
+      <p class="section__subtitle section__subtitle--article-item">Context and aims of the project.</p>
+      <p> Football manager is a game where players are asked to replicate the role of a real-life manager of a professional football team. 
+        Players amongst other roles such as recruiting staff, managing tactical selection and renewing contracts, assemble a squad of 
+        players that will win the most games possible. In order to do this, players are assigned around 30 attributes in order to assess 
+        their ability to perform, such as 'Strength', 'Agility', 'Decisions', 'Finishing' or 'Passing'. These attributes are given a 
+        number from 1 to 20; 1 is the worst, 20 is the best. Therefore, the higher the number for a player's attributes, the better they 
+        are at the game. 
+      </p>
+      <p> The other main reason why this is important is because player will often perfrom in different positions on the football pitch,
+        and perform in different tactical roles when in that position; such as a 'Central defender (Defend)' is responsible for defensive 
+        positioning and stopping goals from being conceded, where as a 'Attacking midfielder (Attack)' is responsible for creating and scoring 
+        goal-scoring opportunities. Each of these roles require different attributes in order to be effective in that role, so therefore
+        some players will be better suited to some roles more than others. For example, a 'Central defender (Defend)' will need strong 'Aggression', 
+        'Heading' and 'Positioning' attributes, whereas an 'Attacking midfielder (Attack)' will need strong 'Passing', 'Vision' and 'Anticipation'
+        attributes. What this therefore means is that a player's suitability for a role can be calculated and determined as a matter of fact. 
+        However, the game does not do this for you, and will display a player's attributes and highlight which attributes they need for the 
+        selected role, but will leave the efficacy of their attributes for that role down to your judgement as a player. I therefore wanted 
+        to build a program that took away the guessing and produced scores and rankings for different players based on their suitability
+        for tactical roles that were in question. 
+      </p>
+      <p class="section__subtitle section__subtitle--article-item">Extracting data and building dataframes.</p>
+      <p></p>
+      <p></p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:josephgrant666@gmail.com" class="footer-link">josephgrant666@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://github.com/josephgrant666">
+          <img src="img/githubicon.png" class="social-icons" alt="github"></img>
+        </a>
+      </li>
+      <li class="social-list__item">
+          <a class="social-list__link" 
+          href="https://www.linkedin.com/in/joe-grant-1a3900153/">
+            <img src="/img/linkedinicon.png" class="social-icons" alt="linkedin"></img>
+          </a>
+        </li>
+    </ul>
+  </footer>
+
+  <script src="js/index.js"></script>
+
+  </body>
+</html>
