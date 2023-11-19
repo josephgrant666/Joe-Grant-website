@@ -78,8 +78,53 @@
         for tactical roles that were in question. 
       </p>
       <p class="section__subtitle section__subtitle--article-item">Extracting data and building dataframes.</p>
-      <p></p>
-      <p></p>
+      <p> What I needed to do first was find a way of extracting data from the game, and exporting it in a format that could then be read
+        by the program. Luckily FM allows you to do this by selecting a list of players, then pressing 'CTRL + P' on your keyboard. This
+        then creates an HTML file with all of the extracted player data in a table, saved to a place in one's local computer files of their
+        choice. 
+      </p>
+      <p> I then needed to find a way of taking this data and making my program read it in an organised way. Luckily the 'pandas' dataframe
+        extension allows one to do this in python. This is an extension that takes an HMTL table file, and allows the table to be read as 
+        dictionary values in pyton. This is an incredibly useful tool as the table columns of infomation on the players that had been selected,
+        could now be read as dictionary keys; e.g. 'Agg' is the table column for a player's aggression attribute. This then meant that for 
+        each player role that I wanted to be analysed, I could manipulate the data of that table column, perform concatenation if necessary,
+        and then display that data in a new table as output.
+      </p>
+      <p class="section__subtitle section__subtitle--article-item">Creating the code.</p>
+      <p> Now that I had a program that could take the exported data, read it and then manipulate it, I needed to write the code that 
+        manipulates and concatenates the data to create output. This was maybe the longest process, as it required for me to research and create
+        the code that created a manipulated average of the attributes required for each player role. A function for each calculation would be
+        created where the manipulted average would be calculated, and then this score would be added as a table column in addition to other 
+        important details about the player, the table would be sorted descending by the player role score, saved as a file on the local 
+        storage, and then opened in the default web-browser. 
+      </p>
+      <figure class="blog__img">
+        <img src="img/FMScout Att Code.png" alt="" class="blog__img">
+        <figcaption>Custom Function Code</figcaption>
+      </figure>
+      <p> Once this was formatted in the correct way and tests were repeated to ensure that the correct output was being created, and exported
+        in the desired way, then it was simply a case of creating different functions for the 50+ player roles in the game.
+      </p>
+      <p class="section__subtitle section__subtitle--article-item">Writing the script.</p>
+      <p> The next lengthy task was writing some program script that would ask the user to type in the name of the role that they would 
+        want analysing, take the input and then use this to select one of the functions that I'd created, and then perform the function. The 
+        difficulty with this was that there are so many ways that a user could type the name of a player role; including, abbreviations, caps,
+        hyphens and whole words. Therefore, I was determined to make a program that was user friendly, and that was able to recognise any of
+        these inputs. Therefore, I had to make sure that string manipulation happened to the input, such as converting the text into lower 
+        case and removing spaces, and manually typing all of the possible names for each player role. This wa made even more difficult 
+        by not being able to indent the code for each name that I was typing; meaning that all of the input examples are stored on one line
+        of code. 
+      </p>
+      <figure class="blog__img">
+        <img src="img/magnifying_glass_icon_svg_RwE_icon.ico" alt="" class="blog__img">
+        <figcaption>FMScout Icon</figcaption>
+      </figure>
+      <p class="section__subtitle section__subtitle--article-item">Testing and finishing touches.</p>
+      <p> I then had to link the code to a batch file in order for it to run as a program. This was straightforward. Then it was a case of 
+        repeatedly testing to program to check for bugs. I was thankful I did this, as there were many bugs that were revealed and allowed
+        me to improve my code. Once I felt confident about this, I then created an icon for the program to make it feel more finished from 
+        a UI point of view. 
+      </p>
   </div>
 
   <!-- Footer -->
