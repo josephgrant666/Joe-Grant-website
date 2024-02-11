@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,scale=1.0">
+    <title>BlogPost 11-02-24</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+      <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="stylesheet" href="/css/Main page styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,400;0,700;0,900;1,100;1,200;1,500&family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300;1,900&family=Merriweather:ital,wght@0,400;1,300;1,400&display=swap');
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="" alt="">
+      </div>
+      <button class="nav-toggle" aria-label="toggle-navigation">
+        <span class="menu-dashes"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/index.html#Home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="/index.html#My-Services" class="nav__link">My Services</a></li>
+          <li class="nav__item"><a href="/index.html#About-Me" class="nav__link">About Me </a></li>
+          <li class="nav__item"><a href="/index.html#My-Blog" class="nav__link">My Blog</a></li>
+          <li class="nav__item"><a href="/index.html#My-Work" class="nav__link">My Work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <!-- Introduction -->
+
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      Pydantic Models, <strong>Schemas and ORMs</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">11-02-24</p>
+    <img src="/img/Profile Longshot.jpg" class="intro__img" alt="Portfolio-img1">
+  </section>
+
+  <div class="Portfolio-item-individual">
+    <div class="blog__item"></div>
+      <p class="section__subtitle section__subtitle--article-item">Continuing the tutorial</p>
+      <p> This week has been a very straightforward process of just continuing my progress on the FastAPI tutorial
+        that I began working on last week. This has meant adding to my tutorial project piece by piece and 
+        documenting any new boilerplate code. This has been a process that I've had to remain patient with, but 
+        the main thing is that I'm continuing to learn and understanding what is being written as I go. What is 
+        good about this project too, is that I'm able to do it in my freetime at work and at home. 
+      </p>
+      <figure class="blog__img">
+        <img src="/img/mainfile.png" alt="" class="blog__img">
+        <figcaption>Main API file</figcaption>
+      </figure>
+      <p class="section__subtitle section__subtitle--article-item">Pydantic Models and Schemas</p>
+      <p> The main piece of learning from this week has been on pydantic models and schemas. These are ways in
+        which code such as response models, classes and database table models can be managed, created and then 
+        inherited in path operations. This involves a lot of technical understanding, but once set up, makes 
+        the code efficient and easy to maintain. 
+      </p>
+      <p class="section__subtitle section__subtitle--article-item">ORMs - SQLAlchemy</p>
+      <p> Another big reason for using models and schemas, was to interact with an SQL database directly from
+        the Python app. The aim of this is to eliminate the use of SQL within the program and handle the creation
+        of tables, updates and queries using python only. This also then enables the programmer to handle how responses
+        are sent back to the user. The last main feature of this was authentication and hashing. modules are imported 
+        and an algorithm is used to hide information wtihin a table - a vital part of establishing secure data. 
+      </p>
+      <p> 
+        <figure class="blog__img">
+            <img src="/img/PGAdmin.png" alt="" class="blog__img">
+            <figcaption>PGAdmin</figcaption>
+          </figure>
+      </p>
+      </p>
+      <p class="section__subtitle section__subtitle--article-item">Aims for next week</p>
+      <p> Very simply, is to try and complete more of the tutorial and expand my skills. I have a lot more tutorial
+        to watch! I've also been documenting different pieces of code as I go, to then be added to my 'Python Functions'
+        repo on GitHub. I'll continue to do this, and think that it's a really healthy habit to maintain whilst I learn.
+      </p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:josephgrant666@gmail.com" class="footer-link">josephgrant666@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://github.com/josephgrant666">
+          <img src="/img/githubicon.png" class="social-icons" alt="github"></img>
+        </a>
+      </li>
+      <li class="social-list__item">
+          <a class="social-list__link" 
+          href="https://www.linkedin.com/in/joe-grant-1a3900153/">
+            <img src="/img/linkedinicon.png" class="social-icons" alt="linkedin"></img>
+          </a>
+        </li>
+    </ul>
+  </footer>
+
+  <script src="/js/index.js"></script>
+
+  </body>
+</html>

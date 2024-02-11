@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,scale=1.0">
+    <title>BlogPost 04-02-24</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+      <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="stylesheet" href="/css/Main page styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,400;0,700;0,900;1,100;1,200;1,500&family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300;1,900&family=Merriweather:ital,wght@0,400;1,300;1,400&display=swap');
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="" alt="">
+      </div>
+      <button class="nav-toggle" aria-label="toggle-navigation">
+        <span class="menu-dashes"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/index.html#Home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="/index.html#My-Services" class="nav__link">My Services</a></li>
+          <li class="nav__item"><a href="/index.html#About-Me" class="nav__link">About Me </a></li>
+          <li class="nav__item"><a href="/index.html#My-Blog" class="nav__link">My Blog</a></li>
+          <li class="nav__item"><a href="/index.html#My-Work" class="nav__link">My Work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <!-- Introduction -->
+
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      APIs and <strong>SQL databases</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">04-02-24</p>
+    <img src="/img/Profile Longshot.jpg" class="intro__img" alt="Portfolio-img1">
+  </section>
+
+  <div class="Portfolio-item-individual">
+    <div class="blog__item"></div>
+      <p class="section__subtitle section__subtitle--article-item"> Finding the right tutorial 
+      </p>
+      <p>Finding a guide that both comprehensively and simply taught me skills in buidling an API proved to 
+        be a tough task. I had previously relied on DataCamp and freecodecamp to provide resources on how to
+        learn a new skill. However, in this case there were no courses that taught how to create an API in 
+        Python. Therefore I had to search for YouTube videos that would do the same job. I thought I had 
+        already done so when I wrote my last post last week, however this tutorial was far too complicated,
+        and created too many problems. I wanted a tutorial that not only got you building, but explained the 
+        syntax too, so that I could use it independently later on. The tutorial I chose before didn't do this, 
+        and also introduced third party modules/dependencies that just complicated things further.
+      </p>
+      <figure class="blog__img">
+        <img src="/img/API video.png" alt="" class="blog__img">
+        <figcaption>API tutorial</figcaption>
+      </figure>
+      <p class="section__subtitle section__subtitle--article-item">freecodecamp API tutorial</p>
+      <p> I found <a href="https://www.youtube.com/watch?v=0sOvCWFmrtA&t=11162s" target="_blank">this</a> video 
+        from the freecodecamp YouTube channel that is a <strong> 19 hour </strong>video on how to build an API 
+        project. This course aims to build a CRUD application using FastAPI, virtual environments, Postman, 
+        Postgres databases and Docker. It is comprehensive to say the least, and does a fantastic job of explaining 
+        concepts in detail. Plus, the instructor is humble and makes me feel at ease! 
+      </p>
+      <p class="section__subtitle section__subtitle--article-item">Virtual environments and PATH operations</p>
+      <p> The first part of the video introduces the course and explains what the project will be, and then takes 
+        you through the steps of how to set up the project. This includes installing programs, dependencies, and 
+        setting up a virtual environment. This was my first time using one, but quickly understood that it was a) 
+        a practice that is used in professional settings, and b) good practice as it ensures that other users can 
+        access the app and its dependencies when run locally. The PATH commands for this were a bit tricky to 
+        create, as my PC wasn't authrosising some of them, and this requires some patient fixes. 
+      </p>
+      <p class="section__subtitle section__subtitle--article-item">CRUD operations and Postman</p>
+      <p> The next part of the video goes through one by one, how to create API CRUD operations and the meaning 
+        behind each piece of code. This included features such as decorators, classes and API initiation. There was 
+        an extensive section for POST, PUT, GET and DELETE operations. Alongside this, the tutorial uses Postman 
+        as a GUI for visualising your API operations. I'm finding Postman incredibly straightforward and 
+        user-friendly.
+      </p>
+      <p> 
+        <figure class="blog__img">
+            <img src="/img/Postman.png" alt="" class="blog__img">
+            <figcaption>Postman</figcaption>
+          </figure>
+      </p>
+      <p class="section__subtitle section__subtitle--article-item">Postgres SQL Database</p>
+      <p> The next step was to initiate a postgres database. Being interested career-wise in database management,
+        I'm really enjoyng this. The video took me through how to initiate a Postgres database server, create 
+        a table, and insert rows and columns. It took me 4 hours to solve an issue when trying to set this up 
+        yesterday, only to realise that the problem was that I had used a non-alpha-numeric character in my 
+        Postgres password, which meant that the program and database cluster wasn't able to be installed 
+        properly. The key, as always though, was staying calm and patient. 
+      </p>
+      <p class="section__subtitle section__subtitle--article-item">Aims for next week</p>
+      <p> Very simply, is to try and complete more of the tutorial and expand my skills. I have a lot more tutorial
+        to watch! I've also been documenting different pieces of code as I go, to then be added to my 'Python Functions'
+        repo on GitHub. I'll continue to do this, and think that it's a really healthy habit to maintain whilst I learn.
+      </p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:josephgrant666@gmail.com" class="footer-link">josephgrant666@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://github.com/josephgrant666">
+          <img src="/img/githubicon.png" class="social-icons" alt="github"></img>
+        </a>
+      </li>
+      <li class="social-list__item">
+          <a class="social-list__link" 
+          href="https://www.linkedin.com/in/joe-grant-1a3900153/">
+            <img src="/img/linkedinicon.png" class="social-icons" alt="linkedin"></img>
+          </a>
+        </li>
+    </ul>
+  </footer>
+
+  <script src="/js/index.js"></script>
+
+  </body>
+</html>

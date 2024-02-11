@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,scale=1.0">
+    <title>BlogPost 28-01-24</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+      <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="stylesheet" href="/css/Main page styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,400;0,700;0,900;1,100;1,200;1,500&family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300;1,900&family=Merriweather:ital,wght@0,400;1,300;1,400&display=swap');
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="" alt="">
+      </div>
+      <button class="nav-toggle" aria-label="toggle-navigation">
+        <span class="menu-dashes"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/index.html#Home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="/index.html#My-Services" class="nav__link">My Services</a></li>
+          <li class="nav__item"><a href="/index.html#About-Me" class="nav__link">About Me </a></li>
+          <li class="nav__item"><a href="/index.html#My-Blog" class="nav__link">My Blog</a></li>
+          <li class="nav__item"><a href="/index.html#My-Work" class="nav__link">My Work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <!-- Introduction -->
+
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      Update since <strong>last post</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">28-01-24</p>
+    <img src="/img/Profile Longshot.jpg" class="intro__img" alt="Portfolio-img1">
+  </section>
+
+  <div class="Portfolio-item-individual">
+    <div class="blog__item"></div>
+      <p class="section__subtitle section__subtitle--article-item">What's happened since the last blogpost</p>
+      <p> Before Christmas in my last post, I warned that blogposts and my coding activity may take a hit during the 
+        Christmas break and ultimately it did. There was a period of 10 days or so where I made no commmits to my github 
+        and wasn't able to stick to my usual routines. However this is for good reason; a combination of moving flat that 
+        then had restricted internet access until 09-01-24 and visiting multiple family members over the Christmas break
+        meant that I just had to accpet the change to the norm. I also embraced the idea that it was good for me to take 
+        some time away to relax.  
+      </p>
+      <p> This didn't however mean that I took a total break away from learning. Since I last posted, I have made significant 
+        progress in multiple concepts and developed existing projects further.         
+      </p>
+      <figure class="blog__img">
+        <img src="/img/Intermediate Python Course.png" alt="" class="blog__img">
+        <figcaption>Intermediate Python Course</figcaption>
+      </figure>
+      <p class="section__subtitle section__subtitle--article-item">MatPlotLib and NumPy</p>
+      <p> I took a course in Intermediate Python on DataCamp in order to progress my skills in Python and in particular,
+        with Data Science and Visualisation. This was the progressive course to 'Introduction to Python', and I chose it 
+        because I had enjoyed the previous course. The new course dealt in MatPlotLib, NumPy and Flow Contral Statements.
+        This was an excellent course, as it allowed me to understand how to create arrays, perform operations on them, then
+        present data with customisation. I learnt so much from this, and then used it to enhance existing projects.
+      </p>
+      <p class="section__subtitle section__subtitle--article-item">FMScout 2.0.0</p>
+      <p> When learning these new concepts, I thought that the perfect place to apply these skills was FMScout; as it is 
+        an app that deals with data arrays, and then the manipulation and presentation of them. Therefore, I adapted the 
+        app to perform NumPy operations on the existing Pandas data arrays, and then use MatPlotLib to present the data to
+        the user. This could be used for both team analysis and scouting. 
+      </p>
+      <p> This was a tricky task. There was a lot of code to write in order to build the dataframe in the correct way, 
+        perform data type manipulations to it, and then write the code that built multiple formats of data presentation,
+        with customisation to highlight data that fulfilled a certain criteria. However, I massively enjoyed it and 
+        through perserverance and trial and error, produced a program that worked as planned. 
+      </p>
+      <p class="section__subtitle section__subtitle--article-item">Custom Tkinter - GUI for Python</p>
+      <p> Upon completing the app, it then frustrated me that I wasn't able to make this app functional in any kind of 
+        user-friendly way, and that GUI was mostly written using react and JavaScript. Therefore, I went about finding 
+        a way of creating a GUI that gave my apps UI functionality, but without spending too much time sweating over the 
+        details of this. 
+      </p>
+      <p> After researching this, I found a module for Python called 'Custom Tkinter'. This lacks the customisation and 
+        front-end appeal of something like React.Js, but is able to provide some front-end for my apps without having to
+        learn JavaScript. I used <a href="https://www.youtube.com/watch?v=Y01r643ckfI&t=1s&pp=ygUOY3VzdG9tIHRraW50ZXI%3D" 
+        target="_blank">this</a> series of videos to learn the code, and then I applied it to FMScout. The code for this 
+        did become tricky in places, as I had to glue together the code that I had already produced, to the functionality
+        of the Custom Tkinter features. However, I ended up with a much more user friendly app that can be used alongside 
+        the game with a lot more ease. 
+        <figure class="blog__img">
+            <img src="/img/FMScout with Custom Tkinter.png" alt="" class="blog__img">
+            <figcaption>FMScout with Custom Tkinter</figcaption>
+          </figure>
+      </p>
+      <p class="section__subtitle section__subtitle--article-item">APIs</p>
+      <p> After completing this to a point where I was happy using it, I then began learning my next programming concept
+        that I have always wanted to understand, due to its seeming imprtance to back-end development; APIs. This is a 
+        current work in progress, and I'm still in the stage of learning its functionality and syntax. From what it seems 
+        there are a number of ways of creating APIs, but I wanted to do so in Python. Therefore, I've begun learning REST 
+        APIs through the module Flask. There are limited courses and tutorials in this area, which is frustrating due to 
+        its importance. I have however, been making notes and using <a href="https://www.youtube.com/watch?v=GMppyAPbLYk"
+        target="_blank">this</a> video to a reasonable amount of success so far. Learning this has by far been the hardest 
+        concept to learn so far. This is mostly because the syntax is not straightforward, and no one explains it very well!
+      </p>
+      <p class="section__subtitle section__subtitle--article-item">Taking fundamental notes and committing them to github</p>
+      <p> What I also thought would be a productive use of time and a good series of commits to make to my github, would be
+        a repo that stores fundamental code in different areas. This contains folders for 'Data Visualisation' or 'Pandas'
+        or 'Dictionaries' so that if needed and I need to brush up on concepts or input some boilerplate code into a program,
+        then I could easily do so. This repo also documents my progress and shows my capabilities. 
+      </p>
+      <p class="section__subtitle section__subtitle--article-item">Next week</p>
+      <p> In the coming week I'm going to focus solely on learning APIs and then begin to implement them into my back-end 
+        projects in order to provide both universalisation and authentication. If possible, I'm also going to add to my 
+        Python Functions repo, and add GUIs to other projects.
+      </p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:josephgrant666@gmail.com" class="footer-link">josephgrant666@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://github.com/josephgrant666">
+          <img src="/img/githubicon.png" class="social-icons" alt="github"></img>
+        </a>
+      </li>
+      <li class="social-list__item">
+          <a class="social-list__link" 
+          href="https://www.linkedin.com/in/joe-grant-1a3900153/">
+            <img src="/img/linkedinicon.png" class="social-icons" alt="linkedin"></img>
+          </a>
+        </li>
+    </ul>
+  </footer>
+
+  <script src="/js/index.js"></script>
+
+  </body>
+</html>
